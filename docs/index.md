@@ -1,7 +1,4 @@
 codebook for created variables
 ===================
 
--  1 [codebook](/codebook/codebook.html)
-    
-
-    
+-  1[codebook](/codebook/docs/codebook.html)
