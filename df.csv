@@ -1,0 +1,78 @@
+variable,description,instruments,raw_variables,detail
+AID,unique ID,NA,NA,NA
+edu_max,maximum education of folk,wave 4 and wave 5,"H4ED2, H5OD11",take the maximum of education level at wave 4 and wave 5
+edu_p,maximum education of parents,parents phase 1 and wave 1,"PA12,PB8,H1RM1,H1RF1","take the maximum of education level of parents and parents' partners 
+responded at parents phase 1; if NA, take the maximum of education level of resident mother and father at wave1"
+assets_household_net_w5,folk's  household net asset,wave 5,"H5EC[2,4], H5EC5[A-C]",positive assets minus debts at wave 5
+palchohol,"if it happens more than once that parents in the last month
+ had five or more drinks on one occasion",parents phase 1,PA62,1: yes; 0:no
+pbills,if parents have enough money to pay the bill,parents phase 1,PA56,1: yes; 0:no
+psmoking,if any smokers in parents household,parents phase 1,PA63,1: yes; 0:no
+poccrm,resident mother occupation,wave 1,H1RM4,16 categories
+poccrf,resident father occupation,wave 1,H1RF4,16 categories
+pneighqual1,parents' neighborhood quality,parents phase 1,PA32,"If a neighbor saw your child getting into trouble, would your neighbor tell you about it"
+cdisab,if folk had disability (mentally or physically ),parents phase 1 and wave 5,"H5LIFE5,PC37, PC38,PC53, PC54",1: yes; 0:no
+chealth1,if folk had any of these diseases,parents phase 1 and wave 5,PC49[A-F]_1,"obesity, Migraine headaches, Allergies or hay fever, Asthma or emphysema, Alcoholism, Diabetes"
+chealth2,if folk was diagnosed with any of these dieases,wave 5,"H5LIFE5,H5LIFE6[A-Q]","*cancer, high blood cholesterol, hypertension, high blood sugar, heart attack, Asthma, depression, PTSD, panic disorder, HIV, hepatitis B or C, chronic kidney disease,
+blood clot, stroke, heart failure, atrial fibrillation, aortic aneurysm"
+chealth3,"if folk was younger than 15, 20, 25, 30 (depending on the different dieases) when diagnosed with any of these dieases*",wave 5,"H5LIFE5,H5ID6[A-T]A",1: yes; 0:no
+ahealth2,if folk was between age 15 and 30 when diagnosed with any of these dieases*,wave 5,H5ID6[A-T]A,1: yes; 0:no
+ahealth3,if folk was older than 30 when diagnosed with any of these dieases*,wave 5,H5ID6[A-T]A,1: yes; 0:no
+bills,"Since 2008, folk self or partner fall behind on paying bills",wave 5,H5EC7,1: yes; 0:no
+srh,folk self-reported health situation,wave 5,H5ID1,"1: fair or poor; 0: excellent, very good, good"
+drug,if folk use any of these drugs in past 30 days,wave 5,"H5TO21, H5TO26[A-D],H5TO27[A-D]","marijuana, Sedatives, Tranquilizers, Stimulants, Pain killers,
+Cocaine, Crystal meth, Heroin, Other types of illegal drugs"
+w5occupgroup,folk's  occupation,wave 5,H5LM12,9 categories according to 2010 Census Code
+bingedrink_month,if folk binge drink in the past 30 days,wave 5,"H5TO13,H5TO14","occasional binge: bingedrink once in the past 30 days;
+regular binge: bingedrink more than once in the past 30 days"
+currentsmoke,if folk smokes in the past 30 days,wave 5,"H5TO1,H5TO2",1:current smoke;0: current not smoke
+parent_income,"parent income, unit: thousand",parents phase 1,PA55,parent income from parent phase 1 interview
+parent_income_categories,convert income_pp1 to 5 quantile groups,parents phase 1,PA55,convert parents income to 5 quantile groups
+smoke_cf_p1,if child folk smoke,parents phase 1,PC40,1: yes; 0:no
+health_cf_p1,child folk health situation,parents phase 1,PC18,NA
+SEI_rm_w12,Socioeconomic index of resident mother,wave 1 and wave 2,"H1RM4,H2RM4",take the SEI calculated by Hauser and Warren by matching the occupation categories to 1990 Census (use SEI of all occupations for category other)
+SEI_rf_w12,Socioeconomic index of resident father,wave 1 and wave 2,"H1RF4,H2RF4",take the SEI calculated by Hauser and Warren by matching the occupation categories to 1990 Census (use SEI of all occupations for category other)
+SEI_max_p_w12,maximum parents SEI,wave 1 and wave 2,"H1RM4,H2RM4,H1RF4,H2RF4",take the maximum of parents SEI socres
+SEI_max_p_w12_log, log of maximum parents SEI,wave 1 and wave 2,"H1RM4,H2RM4,H1RF4,H2RF4",NA
+income_pp1_log, log of parents income,parents phase 1,PA55,NA
+diabetes,"Has a doctor, nurse, or other health care provider ever told you that you have or had high blood sugar or diabetes.",wave 5,H5ID6D,1: yes; 0:no
+heartatk,"Has a doctor, nurse, or other health care provider ever told you that you have or had a heart attack or have you had heart surgery for clogged coronary arteries",wave 5,H5ID6E,1: yes; 0:no
+lowbirthweight,if folk was born less than 5.5 pounds at birth,parents phase 1 and wave 5,"PC19B_O, PC19A_P, H5LIFE1L, H5LIFE1O, H5LIFE2",utilize parents report folk's birth weight as main information supplimented by folks selfreport birthweight and low birthweight information at birth at wave 5. 1: yes; 0:no
+obesew1or2,if folk bmi more than or equal to 30 at wave 1 or wave2,wave 1 and wave 2,"H1GH60, H1GH59A, H1GH59B,H2WS16W, H2WS16HF, H2WS16HI","calculate folk's bmi= Weight (lb) / [height (in)]2 x 703, use wave 2 information as suppliment when wave 1 information is NA"
+obesew3,if folk bmi more than or equal to 30 at wave 3,wave3,"H3WGT, H3HGT_F, H3HGT_I",calculate folk's bmi= Weight (lb) / [height (in)]2 x 703
+obesew4,if folk bmi more than or equal to 30 at wave 4,wave4,H4BMI,NA
+obesew5,if folk bmi more than or equal to 30 at wave 5,wave 5,"H5ID3, H5ID2F, H5ID2I",calculate folk's bmi= Weight (lb) / [height (in)]2 x 703
+re,folk's race and ethnicity (nonhispanic white:1; nonhispanic black:2; nonhispanic asian: 3; nonhispanic other:4; hispanic: 5),"wave 1, wave 3 and wave 4","Hispanic: H1GI4, H3OD2, H5OD4C; white: H1GI6A, H3OD4A,  H5OD4A, black: H1GI6B, H3OD4B, H5OD4B, asian: H1GI6D,H3OD4D,
+H5OD4D, all inclusive: H1GI9, H3IR4, H4IR4",NA
+sex_interv,sex of the interviewee,wave 1,BIO_SEX,
+Plate,assay plate,wave 5,,QC data in quality.rds
+AvgCorrelogram100,Intersample correlation-Average correlograms,wave 5,,QC data in quality.rds
+age_w5,interviewee's age at wave 5,"wave 1, 2, 3, 4,5","H1GI1Y,H2GI1Y,H3OD1Y,H4OD1Y,H5OD1Y,H1GI1M,H2GI1M,H3OD1M,H4OD1M,H5OD1M,IYEAR5, IMONTH5","survey time at wave 5 minus date of birth, date of birth is created using all year month information from w1 to w5"
+BirthY,interviewee's birth year,"wave 1, 2, 3, 4,5","H1GI1Y,H2GI1Y,H3OD1Y,H4OD1Y,H5OD1Y",all birth year information from w1 to w5
+W5REGION, wave 5 Census Region, wave 5,REGION, wgtsw5s1.xpt
+pregnant_biow5,if the interviewee is pregnant or not,wave 5,Q012,is pregnant is defined as women and pregnant
+kit_biow5,assey sample kit condition,wave 5,KITCOND,originally stored in w5biocovars.sas7bdat
+tube_biow5,assey sample tub condition,wave 5,TUBECOND,originally stored in w5biocovars.sas7bdat
+FastHrs,fasting time before blood taken,wave 5,FastHrs,originally stored in w5biocovars.sas7bdat
+travel_biow5,if traveled outside the United States,wave 5,Q016,originally stored in w5biocovars.sas7bdat
+months_biow5,blood collection month,wave 5,EXAMDATE,originally stored in w5biocovars.sas7bdat
+time_biow5,blood collection time,wave 5,EXAMDATE,originally stored in w5biocovars.sas7bdat
+B.cells.naive,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+B.cells.memory,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Plasma.cells,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+T.cells.CD8,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+T.cells.CD4.naive,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+T.cells.CD4.memory.resting,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+T.cells.CD4.memory.activated,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+T.cells.regulatory..Tregs.,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+T.cells.gamma.delta,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+NK.cells.resting,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+NK.cells.activated,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Monocytes,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Macrophages.M0,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Macrophages.M2,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Dendritic.cells.resting,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Dendritic.cells.activated,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Mast.cells.resting,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Eosinophils,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
+Neutrophils,cell type,,,cibersort from Brandt originally stored in CIBERSORT.Output_Job17.csv
